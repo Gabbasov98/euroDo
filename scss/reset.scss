@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 300;
+    src: url("../fonts/AvenirNextCyr-UltraLight.woff2") format("woff2"), url("../fonts/AvenirNextCyr-UltraLight.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-UltraLight.woff") format("woff"), url("../fonts/AvenirNextCyr-UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-style: italic;
+    font-weight: 300;
+    src: url("../fonts/AvenirNextCyr-UltraLightIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr-UltraLightIt.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-UltraLightIt.woff") format("woff"), url("../fonts/AvenirNextCyr-UltraLightIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+    src: url("../fonts/AvenirNextCyr-Regular.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Regular.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/AvenirNextCyr-RegularIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr-RegularIt.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-RegularIt.woff") format("woff"), url("../fonts/AvenirNextCyr-RegularIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 500;
+    src: url("../fonts/AvenirNextCyr-Medium.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Medium.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 500;
+    font-style: italic;
+    src: url("../fonts/AvenirNextCyr-MediumIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr-MediumIt.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-MediumIt.woff") format("woff"), url("../fonts/AvenirNextCyr-MediumIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 600;
+    src: url("../fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Demi.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr-Demi.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 600;
+    font-style: italic;
+    src: url("../fonts/AvenirNextCyr-DemiIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr-DemiIt.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-DemiIt.woff") format("woff"), url("../fonts/AvenirNextCyr-DemiIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 700;
+    src: url("../fonts/AvenirNextCyr-Bold.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Bold.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 700;
+    font-style: italic;
+    src: url("../fonts/AvenirNextCyr-BoldIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr-BoldIt.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-BoldIt.woff") format("woff"), url("../fonts/AvenirNextCyr-BoldIt.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 800;
+    src: url("../fonts/AvenirNextCyr-Heavy.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Heavy.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-Heavy.woff") format("woff"), url("../fonts/AvenirNextCyr-Heavy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr';
+    font-weight: 800;
+    font-style: italic;
+    src: url("../fonts/AvenirNextCyr-HeavyIt.woff2") format("woff2"), url("../fonts/AvenirNextCyr-HeavyIt.eot") format("embedded-opentype"), url("../fonts/AvenirNextCyr-HeavyIt.woff") format("woff"), url("../fonts/AvenirNextCyr-HeavyIt.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a,
+form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    line-height: 1;
+}
+
+button,
+input,
+textarea {
+    outline: none !important;
+    transition: all .3s;
+    &::placeholder {
+        color: #a8a8a8;
+    }
+}
+
+input[type=text]:focus,
+input[type=file]:focus,
+input[type=checkbox]:focus,
+input[type=radio]:focus,
+input:active {
+    outline: none !important;
+}
+
+::-webkit-input-placeholder {
+    color: #222;
+}
+
+::-moz-placeholder {
+    color: #222;
+}
+
+
+/* Firefox 19+ */
+
+:-moz-placeholder {
+    color: #222;
+}
+
+
+/* Firefox 18- */
+
+:-ms-input-placeholder {
+    color: #222;
+}
+
+.transit {
+    /* Safari */
+    transition: all 0.4s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 768px) {}
+
+html {
+    height: 100%;
+}
+
+svg {
+    flex-shrink: 0;
+}
+
+svg,
+path {
+    transition: all .3s;
+}
+
+body {
+    font-family: 'Avenir Next Cyr', sans-serif;
+    font-weight: 400;
+    color: #000;
+    overflow-x: hidden;
+    width: 100%;
+    &.body-fix {
+        overflow-y: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.4s;
+    &:hover {
+        text-decoration: none !important;
+        color: inherit;
+    }
+    &:focus {
+        text-decoration: none !important;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+i {
+    line-height: 100%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-blue {
+    background: #1890FF;
+    border-radius: 2px;
+    height: 30px;
+    padding: 0 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    &:hover {
+        background: #40A9FF;
+        color: #FFFFFF;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 13px;
+    }
+}
