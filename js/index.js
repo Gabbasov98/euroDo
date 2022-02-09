@@ -14,12 +14,25 @@ $(document).ready(function() {
         $("body").removeClass("body-fix")
     })
 
+    $(".question__btn").click(function(e) {
+        e.preventDefault();
+        $(".question__thanks").addClass("question__thanks--active")
+    })
+
     $(".nav__item").click(function() {
         $('.nav-bg').removeClass("nav-bg--active")
         $(".nav").removeClass("nav--active")
         $(".header__burger").removeClass("header__burger--active")
         $("body").removeClass("body-fix")
     })
+
+    $(".nav__item").click(function(event) {
+        event.preventDefault();
+        var idc = $(this).attr('href'),
+            top = $(idc).offset().top;
+        $('body,html').animate({ scrollTop: top - 55 }, 500);
+
+    });
 
 
     $(window).scroll(function() {
