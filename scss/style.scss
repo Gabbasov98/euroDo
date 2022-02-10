@@ -254,7 +254,7 @@
 
 .stat {
     padding: 25px 0 35px;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
     &__title {
@@ -283,6 +283,10 @@
                 grid-column: 3/4;
             }
         }
+        @media screen and (max-width: 992px) {
+            max-width: 700px;
+            grid-template-columns: 200px 300px 200px;
+        }
     }
     &__group {
         display: flex;
@@ -297,12 +301,17 @@
             color: rgba(0, 0, 0, 0.45);
             text-align: center;
             margin: 0 50px;
+            @media screen and (max-width: 992px) {
+                width: 150px;
+                margin: 0 25px;
+                font-size: 16px;
+            }
         }
     }
     &__item {
         width: 363px;
-        @media screen and (max-width: 1200px) {
-            // width: 375px;
+        @media screen and (max-width: 992px) {
+            width: 250px;
         }
         &--reverse {
             .stat__item-wrap {
