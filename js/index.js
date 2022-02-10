@@ -82,7 +82,10 @@ $(document).ready(function() {
             var scroll = $(window).scrollTop() + $(window).height();
             var offset = $(this).offset().top
             if (scroll > offset && counter2 == 0) {
-                $(this).addClass("main__item--active")
+
+                setTimeout(() => {
+                    $(this).addClass("main__item--active")
+                }, 500);
             } else {
                 $(this).removeClass("main__item--active")
             }
