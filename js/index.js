@@ -17,7 +17,15 @@ $(document).ready(function() {
     $(".question__btn").click(function(e) {
         e.preventDefault();
         $(".question__thanks").addClass("question__thanks--active")
+
+        setTimeout(hideThanks, 3000);
+        // setTimeout($(".question__thanks").removeClass("question__thanks--active"), 2000);
     })
+
+    function hideThanks() {
+        console.log(true)
+        $(".question__thanks").removeClass("question__thanks--active")
+    }
 
     $(".nav__item").click(function() {
         $('.nav-bg').removeClass("nav-bg--active")
@@ -30,7 +38,7 @@ $(document).ready(function() {
         event.preventDefault();
         var idc = $(this).attr('href'),
             top = $(idc).offset().top;
-        $('body,html').animate({ scrollTop: top - 55 }, 500);
+        $('body,html').animate({ scrollTop: top - 55 }, 0);
 
     });
 
@@ -45,6 +53,38 @@ $(document).ready(function() {
             if (scroll > top && scroll < bottom) {
                 $('.nav__item.nav__item--active').removeClass('nav__item--active');
                 $('.nav__item[href="#' + idn + '"]').addClass('nav__item--active');
+            }
+        });
+    });
+
+
+    var $element = $('.how-work__item');
+    let counter = 0;
+    $(window).scroll(function() {
+        $element.each(function(index, el) {
+            var scroll = $(window).scrollTop() + $(window).height();
+            var offset = $(this).offset().top
+            if (scroll > offset && counter2 == 0) {
+                $(this).addClass("how-work__item--active")
+            } else {
+                $(this).removeClass("how-work__item--active")
+            }
+        });
+    });
+
+
+    var $element2 = $('.main__item');
+    let counter2 = 0;
+
+    $(window).scroll(function() {
+
+        $element2.each(function(index, el) {
+            var scroll = $(window).scrollTop() + $(window).height();
+            var offset = $(this).offset().top
+            if (scroll > offset && counter2 == 0) {
+                $(this).addClass("main__item--active")
+            } else {
+                $(this).removeClass("main__item--active")
             }
         });
     });

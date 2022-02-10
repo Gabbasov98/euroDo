@@ -226,7 +226,7 @@ i {
   border-radius: 2px;
   height: 30px;
   padding: 0 30px;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   font-size: 14px;
 }
 .btn-blue:hover {
@@ -239,12 +239,22 @@ i {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1060px;
+  }
+}
 .header {
   position: sticky;
   top: 0;
   z-index: 10;
   background: #FFFFFF;
   box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
+}
+@media screen and (min-width: 1200px) {
+  .header .container {
+    width: 1150px;
+  }
 }
 .header__inner {
   display: flex;
@@ -266,6 +276,14 @@ i {
 }
 .header__burger {
   display: none;
+}
+.header__btn {
+  width: 307px;
+}
+@media screen and (max-width: 1200px) {
+  .header__btn {
+    width: unset;
+  }
 }
 
 .nav {
@@ -363,7 +381,7 @@ i {
   width: 142px;
 }
 .main__title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 35px;
   line-height: 153%;
   color: rgba(0, 0, 0, 0.85);
@@ -384,9 +402,38 @@ i {
   margin-top: 60px;
 }
 .main__item {
-  margin-top: 13px;
+  margin-top: 14px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.main__item:hover {
+  color: #1890FF;
+}
+.main__item:hover .main__item-icon {
+  background-color: transparent;
+}
+.main__item:hover .main__item-icon path {
+  fill: #1890FF;
+}
+.main__item:first-child::before {
+  display: none;
+}
+.main__item:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  height: 8px;
+  width: 1px;
+  background: #F0F0F0;
+  left: 16px;
+  bottom: 100%;
+  margin-bottom: 3px;
+}
+@media screen and (max-width: 992px) {
+  .main__item:before {
+    display: none;
+  }
 }
 .main__item-icon {
   width: 33px;
@@ -394,13 +441,14 @@ i {
   border-radius: 50%;
   flex-shrink: 0;
   background: #1890FF;
+  border: 1px solid #1890FF;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 22px;
 }
 .main__item-title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 125%;
 }
@@ -435,6 +483,9 @@ i {
   line-height: 141%;
   margin-top: 5px;
   color: rgba(0, 0, 0, 0.85);
+}
+.opportunity__item-title strong {
+  font-weight: 600;
 }
 
 .stat {
@@ -479,7 +530,7 @@ i {
 }
 .stat__group-title {
   width: 155px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 130%;
   color: rgba(0, 0, 0, 0.45);
@@ -498,6 +549,8 @@ i {
 }
 .stat__item--reverse .stat__item-icon {
   text-align: left;
+  padding-left: 50px;
+  padding-right: 0;
 }
 .stat__item--reverse .stat__item-num {
   text-align: left;
@@ -505,6 +558,7 @@ i {
 }
 .stat__item-icon {
   text-align: right;
+  padding-right: 50px;
 }
 .stat__item-progress {
   background: #1890FF;
@@ -640,7 +694,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 35px;
   line-height: 120%;
   padding: 20px;
@@ -658,7 +712,7 @@ i {
   }
 }
 .question__title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 35px;
   line-height: 120%;
   color: black;
@@ -726,6 +780,9 @@ i {
 }
 .footer__mail {
   text-decoration: underline;
+}
+.footer__mail:hover {
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 992px) {
@@ -827,6 +884,14 @@ i {
     height: 246px;
     margin-top: 23px;
   }
+}
+@media screen and (max-width: 992px) and (max-width: 500px) {
+  .main__images {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 992px) {
   .main__img-num {
     width: 20px;
     height: 20px;
@@ -875,6 +940,15 @@ i {
 @media screen and (max-width: 992px) {
   .main__items {
     margin-top: 50px;
+  }
+  .main__item--active {
+    color: #1890FF;
+  }
+  .main__item--active .main__item-icon {
+    background-color: transparent;
+  }
+  .main__item--active .main__item-icon path {
+    fill: #1890FF;
   }
   .main__item-icon {
     width: 28.52px;
@@ -944,6 +1018,7 @@ i {
     align-items: flex-end;
     max-width: 320px;
     margin: 0 auto 13px;
+    padding-right: 30px;
   }
   .stat-mob__group-title {
     width: 75px;
@@ -954,6 +1029,10 @@ i {
     line-height: 130%;
     color: rgba(0, 0, 0, 0.45);
     text-align: center;
+  }
+  .stat-mob__group--reverse {
+    padding-right: 0;
+    padding-left: 30px;
   }
   .stat-mob__group--reverse .stat-mob__item-wrap {
     justify-content: flex-start;
@@ -1154,5 +1233,10 @@ i {
   .footer__co, .footer__mail {
     font-size: 9px;
     margin: 0 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .how-work__item--active .how-work__item-img img {
+    filter: drop-shadow(0px 4px 17px rgba(24, 144, 255, 0.46));
   }
 }
