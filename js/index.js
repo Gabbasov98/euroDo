@@ -47,6 +47,7 @@ $(document).ready(function() {
         var $sections = $('section');
         $sections.each(function(i, el) {
             var top = $(el).offset().top - 135;
+
             var bottom = top + $(el).height();
             var scroll = $(window).scrollTop();
             var idn = $(el).attr('id');

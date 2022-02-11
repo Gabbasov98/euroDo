@@ -251,7 +251,7 @@ i {
   background: #FFFFFF;
   box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
   .header .container {
     width: 1150px;
   }
@@ -280,9 +280,9 @@ i {
 .header__btn {
   width: 307px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .header__btn {
-    width: unset;
+    width: 220px;
   }
 }
 
@@ -293,11 +293,12 @@ i {
 }
 .nav__item {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(0, 0, 0, 0.85) !important;
   position: relative;
   height: 100%;
   display: flex;
   align-items: center;
+  outline: none !important;
 }
 @media screen and (max-width: 992px) {
   .nav__item {
@@ -325,7 +326,7 @@ i {
   transition: all .3s;
 }
 .nav__item--active, .nav__item:hover {
-  color: #1890FF;
+  color: #1890FF !important;
 }
 .nav__item--active:before, .nav__item:hover:before {
   opacity: 1;
@@ -416,10 +417,11 @@ i {
   display: flex;
   align-items: center;
   position: relative;
-  transition: all .4s;
+  transition: all .1s;
 }
-.main__item path {
-  transition: all .4s;
+.main__item path,
+.main__item svg {
+  transition: all .1s;
 }
 .main__item:hover {
   color: #1890FF;
@@ -460,13 +462,13 @@ i {
   align-items: center;
   justify-content: center;
   margin-right: 22px;
-  transition: all .4s;
+  transition: all .1s;
 }
 .main__item-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 125%;
-  transition: all .4s;
+  transition: all .1s;
 }
 
 .opportunity {

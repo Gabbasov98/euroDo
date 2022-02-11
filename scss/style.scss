@@ -5,7 +5,7 @@
     z-index: 10;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(218, 222, 225, 0.25);
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199px) {
         .container {
             width: 1150px;
         }
@@ -31,8 +31,8 @@
     }
     &__btn {
         width: 307px;
-        @media screen and (max-width: 1200px) {
-            width: unset;
+        @media screen and (max-width: 992px) {
+            width: 220px;
         }
     }
 }
@@ -43,11 +43,12 @@
     height: 60px;
     &__item {
         font-size: 14px;
-        color: rgba(0, 0, 0, 0.85);
+        color: rgba(0, 0, 0, 0.85) !important;
         position: relative;
         height: 100%;
         display: flex;
         align-items: center;
+        outline: none !important;
         @media screen and (max-width: 992px) {
             font-size: 12px;
         }
@@ -71,7 +72,7 @@
         }
         &--active,
         &:hover {
-            color: #1890FF;
+            color: #1890FF !important;
             &:before {
                 opacity: 1;
             }
@@ -163,9 +164,10 @@
         display: flex;
         align-items: center;
         position: relative;
-        transition: all .4s;
-        path {
-            transition: all .4s;
+        transition: all .1s;
+        path,
+        svg {
+            transition: all .1s;
         }
         &:hover {
             color: #1890FF;
@@ -204,13 +206,13 @@
             align-items: center;
             justify-content: center;
             margin-right: 22px;
-            transition: all .4s;
+            transition: all .1s;
         }
         &-title {
             font-weight: 500;
             font-size: 18px;
             line-height: 125%;
-            transition: all .4s;
+            transition: all .1s;
         }
     }
 }
