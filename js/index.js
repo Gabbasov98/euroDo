@@ -58,38 +58,4 @@ $(document).ready(function() {
         });
     });
 
-
-    // var $element = $('.how-work__item');
-    // let counter = 0;
-    // $(window).scroll(function() {
-    //     $element.each(function(index, el) {
-    //         var scroll = $(window).scrollTop() + $(window).height();
-    //         var offset = $(this).offset().top
-    //         if (scroll > offset && counter2 == 0) {
-    //             $(this).addClass("how-work__item--active")
-    //         } else {
-    //             $(this).removeClass("how-work__item--active")
-    //         }
-    //     });
-    // });
-
-
-    // var $element2 = $('.main__item');
-    // let counter2 = 0;
-
-    // $(window).scroll(function() {
-
-    //     $element2.each(function(index, el) {
-    //         var scroll = $(window).scrollTop() + $(window).height();
-    //         var offset = $(this).offset().top
-    //         if (scroll > offset && counter2 == 0) {
-
-    //             setTimeout(() => {
-    //                 $(this).addClass("main__item--active")
-    //             }, 500);
-    //         } else {
-    //             $(this).removeClass("main__item--active")
-    //         }
-    //     });
-    // });
 })
