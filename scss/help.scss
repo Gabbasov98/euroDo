@@ -24,7 +24,10 @@
         display: block;
         &--active,
         &:hover {
-            color: #1890FF;
+            color: #1890FF !important;
+        }
+        &:visited {
+            color: rgba(0, 0, 0, 0.85);
         }
     }
     &__title {
@@ -50,7 +53,7 @@
             }
         }
         &-subtitle {
-            font-weight: bold;
+            font-weight: 600;
             font-size: 18px;
             line-height: 22px;
             margin: 50px 0 20px;
@@ -73,7 +76,7 @@
         }
     }
     &__hint {
-        padding: 10px;
+        padding: 14px;
         background: #FFF2F0;
         border-radius: 3px;
         font-size: 14px;

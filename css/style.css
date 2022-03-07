@@ -1312,7 +1312,10 @@ i {
   display: block;
 }
 .help__link--active, .help__link:hover {
-  color: #1890FF;
+  color: #1890FF !important;
+}
+.help__link:visited {
+  color: rgba(0, 0, 0, 0.85);
 }
 .help__title {
   font-weight: 600;
@@ -1338,7 +1341,7 @@ i {
   margin-right: 18px;
 }
 .help__step-subtitle {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   margin: 50px 0 20px;
@@ -1360,7 +1363,7 @@ i {
   margin-bottom: 0;
 }
 .help__hint {
-  padding: 10px;
+  padding: 14px;
   background: #FFF2F0;
   border-radius: 3px;
   font-size: 14px;
